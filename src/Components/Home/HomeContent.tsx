@@ -5,6 +5,8 @@ import DetailsList from "../DetailsCard/Detailslist";
 import Slider from "../Shared/Slider";
 import TreasuresCard from "../Treasures/TreasuresCard";
 import TreasuresList from "../Treasures/TreasuresList";
+import FeedbackMsgCard from "../Feedback/FeedbackMsgCard";
+import FeedbackMsgList from "../Feedback/FeedbackMsgList";
 
 const HomeContent = () => {
     return (
@@ -31,6 +33,15 @@ const HomeContent = () => {
                 <TreasuresList />
             </div>
 
+            
+            <div className="mt-[50px] pt-[60px] pb-[60px] pl-[150px] pr-[150px] bg-[#077B83] bg-opacity-[12%]">
+            <div className=" flex flex-col  mt-8 space-y-4">
+                    <h1 className="text-3xl font-bold font-sans text-left">Voices <span className="text-[#077B83]">of Delight :</span></h1>
+                    <p className="w-[400px] text-sm text-left ">Hear What Our Customers Have to Say!</p>
+
+                </div >
+                <FeedbackMsgList/>
+                 </div>
 
             <div className="p-5 bg-gray-200 mt-8 flex flex-col justify-center items-center">
                 <div className=" flex flex-col justify-center items-center mt-8 space-y-4">
@@ -43,8 +54,8 @@ const HomeContent = () => {
                     <AdventureList />
                 </div>
             </div>
-
             <div></div>
+
         </div>
     );
 }
