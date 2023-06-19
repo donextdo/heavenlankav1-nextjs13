@@ -1,6 +1,7 @@
 import { FiChevronRight } from 'react-icons/fi';
 import phone from '../../../assets/Adventure/call.png'
 import AdventureCard from './AdventureCard';
+
 const AdventureList = () => {
    const adventure1= {
         image: phone,

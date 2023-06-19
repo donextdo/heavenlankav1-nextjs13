@@ -7,6 +7,7 @@ import TreasuresCard from "../Treasures/TreasuresCard";
 import TreasuresList from "../Treasures/TreasuresList";
 import FeedbackMsgCard from "../Feedback/FeedbackMsgCard";
 import FeedbackMsgList from "../Feedback/FeedbackMsgList";
+import FooterView from "../Footer/Footer";
 
 const HomeContent = () => {
     return (
@@ -54,7 +55,9 @@ const HomeContent = () => {
                     <AdventureList />
                 </div>
             </div>
-            <div></div>
+            <div className="mt-[50px] pt-[60px] pb-[60px] pl-[150px] pr-[150px] bg-[#077B83] bg-opacity-[10%]">
+                <FooterView/>
+            </div>
 
         </div>
     );
