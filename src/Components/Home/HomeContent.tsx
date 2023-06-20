@@ -9,10 +9,14 @@ import FeedbackMsgCard from "../Feedback/FeedbackMsgCard";
 import FeedbackMsgList from "../Feedback/FeedbackMsgList";
 import FooterView from "../Footer/Footer";
 import SubscriptionCard from "../Subscribe/SubscriptionCard";
+import QuotesCard from "../Quotes/QuotesCard";
 
 const HomeContent = () => {
     return (
         <div className="container mx-auto px-20 mt-12">
+            <div className=" absolute -mt-[200px] ml-[100px]">
+                <QuotesCard/>
+            </div>
             <div className=" flex flex-col justify-center items-center mt-2 space-y-4">
                 <h1 className="text-3xl font-bold font-sans">Why <span className="text-[#077B83]">Heaven Lanka</span></h1>
                 <p className="w-[450px] text-center text-sm">At Heaven Lanka, we are passionate about providing our clients with an exceptional travel experience</p>
@@ -63,10 +67,11 @@ const HomeContent = () => {
                 <SubscriptionCard/>
             </div>
 
-            
+
             <div className="mt-[0px] pt-[250px] pb-[60px] pl-[150px] pr-[150px] bg-[#077B83] bg-opacity-[10%]">
                 <FooterView/>
             </div>
+            
            
 
         </div>
