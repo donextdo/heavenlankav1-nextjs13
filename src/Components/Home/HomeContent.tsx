@@ -10,6 +10,7 @@ import FeedbackMsgList from "../Feedback/FeedbackMsgList";
 import FooterView from "../Footer/Footer";
 import SubscriptionCard from "../Subscribe/SubscriptionCard";
 import QuotesCard from "../Quotes/QuotesCard";
+import VaccationList from "../Vacccation/VaccationList";
 
 const HomeContent = () => {
     return (
@@ -26,6 +27,17 @@ const HomeContent = () => {
             <div className="mt-8">
 
                 <DetailsList />
+            </div>
+            <div className=" flex flex-col justify-center items-center mt-14 space-y-4">
+                <h1 className="text-3xl font-bold font-sans"><span className="text-[#077B83]">Best</span> vacation plans</h1>
+                <p className="w-[650px]  text-sm text-center">"Embark on an unforgettable adventure with our 'Ultimate Sri Lanka' tour package.</p>
+                <p className="w-[690px]  text-sm text-center leading-[3px]">Discover the country's stunning landscapes, ancient temples, and wildlife on this comprehensive tour.</p>
+
+            </div>
+
+            
+            <div className="mt-[65px]">
+                <VaccationList />
             </div>
 
             <div className=" flex flex-col justify-center items-center mt-14 space-y-4">
