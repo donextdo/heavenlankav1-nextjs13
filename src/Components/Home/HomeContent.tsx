@@ -8,6 +8,7 @@ import TreasuresList from "../Treasures/TreasuresList";
 import FeedbackMsgCard from "../Feedback/FeedbackMsgCard";
 import FeedbackMsgList from "../Feedback/FeedbackMsgList";
 import FooterView from "../Footer/Footer";
+import SubscriptionCard from "../Subscribe/SubscriptionCard";
 
 const HomeContent = () => {
     return (
@@ -40,24 +41,33 @@ const HomeContent = () => {
                     <h1 className="text-3xl font-bold font-sans text-left">Voices <span className="text-[#077B83]">of Delight :</span></h1>
                     <p className="w-[400px] text-sm text-left ">Hear What Our Customers Have to Say!</p>
 
-                </div >
-                <FeedbackMsgList/>
-                 </div>
+            </div >
 
-            <div className="p-5 bg-gray-200 mt-8 flex flex-col justify-center items-center">
+                <FeedbackMsgList/>
+            </div>
+
+
+            <div className="p-10 bg-gray-200 mt-8 flex flex-col justify-center items-center">
                 <div className=" flex flex-col justify-center items-center mt-8 space-y-4">
                     <h1 className="text-3xl font-bold font-sans">How It Works - <span className="text-[#077B83]">From Inquiry to Adventure!</span></h1>
                     <p className="w-[400px]  text-center text-sm">Ready to embark on your dream journey to Sri Lanka? Making an inquiry with Heaven Lanka is simple and hassle-free. Follow these easy steps to kickstart your personalized travel experience</p>
-
                 </div>
 
                 <div className="mt-8">
                     <AdventureList />
                 </div>
             </div>
-            <div className="mt-[50px] pt-[60px] pb-[60px] pl-[150px] pr-[150px] bg-[#077B83] bg-opacity-[10%]">
+
+
+            <div className="absolute -mt-[220px] ml-[100px] flex flex-col justify-center items-center">
+                <SubscriptionCard/>
+            </div>
+
+            
+            <div className="mt-[0px] pt-[250px] pb-[60px] pl-[150px] pr-[150px] bg-[#077B83] bg-opacity-[10%]">
                 <FooterView/>
             </div>
+           
 
         </div>
     );
