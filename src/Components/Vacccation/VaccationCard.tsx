@@ -11,7 +11,7 @@ const VaccationCard = ({item}:any) => {
             </div>
             <div  >
                 <Image
-                className=" border rounded-md pt-[-10px]"
+                className=" border rounded-[10px] pt-[-10px]"
                     src={item?.image}
                     alt="item1"
                     style={{
@@ -24,7 +24,7 @@ const VaccationCard = ({item}:any) => {
                 />
             </div>
             <h1 className='text-[#077B83] text-sm font-semibold text-left pl-[10px] pt-[10px]'>{item.name}</h1>
-            <div className='flex flex-row  gap-[15px]'>
+            <div className='flex flex-row  gap-[6px]'>
                 
                 <div className='text-[#fbbc05] pl-[10px] mt-[3px]'><FaStar/></div>
                 <div>{item.rate}</div>

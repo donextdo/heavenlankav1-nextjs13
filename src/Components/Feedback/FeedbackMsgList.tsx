@@ -14,13 +14,13 @@ const FeedbackMsgList = () => {
     ]
 
     return (
-        <div className="flex flex-row items-left">
+        <div className="flex flex-row ">
             <div className="flex flex-row gap-[40px] mt-[60px]">
             <FiArrowLeftCircle className='w-10 h-10 text-[#FFFFFF] text-opacity-[50%] opacity-[50%] fill-[#999999]'/>
              <FiArrowRightCircle className='w-10 h-10 text-[#FFFFFF] text-opacity-[50%]  fill-[#FA7436]'/>
             </div>
             
-             <div className=" ml-[500px] -mt-[50px]">
+             <div className=" ml-[320px] -mt-[50px]">
              {Feedback.map((message ,index) => (
                  <FeedbackMsgCard key={index} message={message}  />
              ))}

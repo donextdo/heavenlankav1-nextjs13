@@ -4,7 +4,7 @@ const DurationInput = () => {
        
         <div>
             
-        <div className=" mb-[20px] font-bold text-[#E5E5E5] text-[24px]">
+        <div className=" mb-[20px] font-bold text-[#E5E5E5] text-[20px]">
         <label >Tour Duration</label>
         </div>
        
