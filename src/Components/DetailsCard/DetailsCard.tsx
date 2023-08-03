@@ -3,24 +3,11 @@ import rectangle from '../../../assets/DetailsIcon/Rectangle.png'
 
 const DetailsCard = ({item}:any) => {
     return ( 
-        <div className="mt-5 space-y-2 shadow-xl p-4 border border-gray-100 rounded-md ">
-            <div className="w-8 h-8">
-                <Image
-                    src={item?.image}
-                    alt="item1"
-                    style={{
-                        objectFit: "contain",
-                        backgroundColor: "white",
-                        width: "100%",
-                        height: "100%",
-                        float: "left"
-                    }}
-                    width={450}
-                    height={400}
-                    
-                />
+        <div className="mt-5 w-[371px] h-[401px]  shadow-xl p-8 border border-gray-100 rounded-md ">
+            <div >
+               {item.icon}
             </div>
-            <h1 className="font-bold"> {item.name}</h1>
+            <h1 className="font-bold text-[24px] leading-[30px] w-[250px] pt-8 pb-4"> {item.name}</h1>
             <p>{item.details}</p>
         </div>
      );

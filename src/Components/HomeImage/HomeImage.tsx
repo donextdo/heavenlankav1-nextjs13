@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const HomeImage = () => {
     return (
+       
         <div className="relative flex flex-col items-center">
             <div className="h-[800px] w-full ">
                 <Image
@@ -17,10 +18,11 @@ const HomeImage = () => {
             </div>
 
             <div className="absolute container mx-auto px-20 top-48">
-                <h1 className="text-[40px] font-bold w-96 text-white font-sans">Get started your exciting journey with us.</h1>
-                <h5 className="text-sm font-normal w-96 text-white">a team of experienced toruism professionals will provide you with the besr advice and tips for your desire place</h5>
+                <h1 className="text-[64px] leading-[70px] font-bold w-[490px] text-white font-[volkhov]">Get started your exciting journey with us.</h1>
+                <h5 className="text-[20px] font-normal w-[560px] text-white">A team of experienced toruism professionals will provide you with the besr advice and tips for your desire place</h5>
             </div>
         </div>
+        
     );
 }
 
